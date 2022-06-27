@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Five Letter Words</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="word-finder">
+			<form class="word-finder-form">
+				<div class="form-row">
+					<input type="text" class="input-starts" data-id="starts" placeholder="Starts With" />
+					<input type="text" class="input-ends" data-id="ends" placeholder="Ends With" />
+					<input type="text" class="input-contains" data-id="contains" placeholder="Contains" />
+					<input type="text" class="input-exclude" data-id="exclude" placeholder="Exclude" />
+					<input type="text" class="input-include" data-id="include" placeholder="Include" />
+				</div>
+			  <div class="form-row form-btns">
+			  	<button class="btn btn-reset">Reset</button>
+			  	<button class="btn btn-search">Search</button>
+			  </div>
+			</form>
+		</div>
+
+		<div class="word-stage"></div>		
+	</div>
+
+	<script src="fiveLetterWords.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
